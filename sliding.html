@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Sliding Puzzle</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            width: 100%;
+             
+        }
+
+        #video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+        }
+
+        h1 {
+            color: #fff;
+            text-align: center;
+            margin-top: 20px;
+        }
+        #tiles {
+   width: 400px;
+   margin: 0 auto;
+   position: relative;
+   background-color: white;
+   padding: 8px;
+   border-radius: 0.5rem;
+}
+
+
+        </style>
+        <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+    <video id="video-background" autoplay muted loop>
+        <source src="numbersmovingbackground.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+   
+    <h1>Sliding Puzzle</h1>
+    <div id="tiles">
+    </div>
+    <script src="main.js" type="text/javascript"></script>
+    
+</body>
+</html>
